@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Weather App</a>
+
+        <div class="">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="City Name" aria-label="Search" [(ngModel)]="cityName" [ngModelOptions]="{standalone: true}">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="search()">Search</button>
+            </form>
+        </div>               
+        <ul class="navbar-nav nav-icon nav-pills nav-stacked hidden-xs navbar-inverse">
+            <li class="nav-item active">
+                <i class="nav-link fa fa-battery-three-quarters fa-2x" href="#" aria-hidden="true"></i>
+            </li>
+            <li class="nav-item">
+                    <i class="nav-link fa fa-heart-o fa-2x" href="#" aria-hidden="true"></i>
+            </li>
+            <li class="nav-item">
+                <i class="nav-link fa fa-user-o fa-2x" href="#" aria-hidden="true"></i>
+            </li>
+        </ul>  
+      
+    </div>
+
+  </nav>

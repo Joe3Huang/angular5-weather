@@ -1,0 +1,19 @@
+
+.nav-icon li {
+    margin-right: 10px;
+}
+
+
+
+.info{
+    width: 100%;
+    max-width: 610px;
+    margin: 30px auto 15px;
+    background-color: #fff;
+    box-shadow: 0 0 3px #ccc;
+    text-align: center;
+}
+
+.info img{
+    width: 100%;
+}

@@ -19,15 +19,11 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "./app/styles/global.scss",
-        "./../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "../node_modules/font-awesome/css/font-awesome.css"
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "app/styles/global.scss"
       ],
-      "stylePreprocessorOptions": {
-        "includePaths": [
-          "../node_modules/bootstrap/scss"
-        ]
-      },
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
