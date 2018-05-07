@@ -1,5 +1,5 @@
 $font-stack:    Helvetica, sans-serif;
-$primary-color: red;
+$primary-color: #333;
 
 body {
   font: 100% $font-stack;
@@ -14,10 +14,14 @@ body {
     max-width: 610px;
     margin: 30px auto 15px;
     background-color: #fff;
-    box-shadow: 0 0 3px #ccc;
+    //box-shadow: 0 0 3px #ccc;
     text-align: center;
 }
 
 .info img{
     width: 100%;
+}
+
+.option-bar {
+    background: $primary-color;
 }

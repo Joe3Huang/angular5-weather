@@ -9,4 +9,16 @@
 
 
 <optionBar></optionBar>       
-<weatherFrame></weatherFrame>
+<div>
+    <div *ngIf="option == 'today'">
+        <weatherFrame [data]="dayWeather"></weatherFrame>
+    </div>
+    <div *ngIf="option == 'fiveDays'" class="d-flex justify-content-start">
+        <div  *ngFor="let weather of fiveDaysWeather" style="width:200px;">
+            <weatherFrame [data]="weather"></weatherFrame>
+        </div>
+        
+    </div>
+    
+    <!-- <weatherFrame [data]="dataadf"></weatherFrame>         -->
+</div>

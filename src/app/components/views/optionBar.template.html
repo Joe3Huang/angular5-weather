@@ -1,10 +1,10 @@
 
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light option-bar">
     <div class="container">
         <ul class="navbar-nav nav-icon nav-pills">
-            <li class="nav-item"> <button class="btn btn-outline-success my-2 my-sm-0"> Today </button></li>
-            <li class="nav-item"> <button class="btn btn-outline-success my-2 my-sm-0"> Week </button></li>
-            <li class="nav-item"> <button class="btn btn-outline-success my-2 my-sm-0"> 2 Weeks </button></li>
+            <li class="nav-item"> <button class="btn btn-outline-success my-2 my-sm-0" (click)="setOption('today')"> Today </button></li>
+            <li class="nav-item"> <button class="btn btn-outline-success my-2 my-sm-0" (click)="setOption('fiveDays')"> 5 days </button></li>
+            <li class="nav-item"> <button class="btn btn-outline-success my-2 my-sm-0" (click)="setOption('twoWeeks')"> 2 Weeks </button></li>
         </ul>
     </div>
 </nav>

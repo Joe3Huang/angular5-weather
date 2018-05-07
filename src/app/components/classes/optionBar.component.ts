@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Store, select} from '@ngrx/store';
-import { SET, RESET } from './../../ngrx/search.reducer';
+import { SETOPTION, RESETOPTION } from './../../ngrx/options.reducer';
 
 @Component({
     selector: 'optionBar',
@@ -16,7 +16,7 @@ export class OptionBarComponent {
     }
 
     setOption(theOption : string){
-        this.store.dispatch({ type: SET, payload : theOption});
+        this.store.dispatch({ type: SETOPTION, payload : theOption});
     }
 
 }

@@ -1,16 +1,16 @@
 import { ActionReducer, Action } from '@ngrx/store';
 
-export const SET = 'SET';
-export const RESET = 'RESET';
+export const SETOPTION = 'SETOPTION';
+export const RESETOPTION = 'RESETOPTION';
 
-export function optionsReducer(state: string = 'Today', action: Action) {
+export function optionsReducer(state: string = 'today', action: Action) {
 	switch (action.type) {
-		case SET:
+		case SETOPTION:
 			state = action.payload;
 			return state;
             
-		case RESET:
-			return 'Today';
+		case RESETOPTION:
+			return 'today';
 
 		default:
 			return state;
